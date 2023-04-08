@@ -4,41 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Ecommerce - Home</title>
 </head>
 <body>
     <header>
-        <h1>Tienda de Muebles </h1>
+        <h1 class="nombre-sitio">Tienda de  <span>Muebles</span></h1>
     </header>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="tienda.html">Tienda</a>
-        <a href="blog.html">Blog</a>
-        <a href="galeria.html">Galeria</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
-    <section>
-        <h2>Categoría de Productos</h2>
-        <div>
-            <img src="img/categoria1.jpg" alt="Imagen Categoría">
-            <a href="#">Oficina</a>
-        </div>
-        <div>
-            <img src="img/categoria2.jpg" alt="Imagen Categoría">
-            <a href="#">Hogar</a>
-        </div>
-        <div>
-            <img src="img/categoria3.jpg" alt="Imagen Categoría">
-            <a href="#">Cocina</a>
+
+    <div class="contenedor-navegacion">
+        <nav class="nav-primary contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+
+    <div class="hero"></div>
+
+    <section class="contenedor">
+        <h2>Categoría de <span>Productos</span></h2>
+        <div class="listado-categorias">
+            <div>
+                <img src="img/categoria1.jpg" alt="Imagen Categoría">
+                <a href="#">Oficina</a>
+            </div>
+            <div>
+                <img src="img/categoria2.jpg" alt="Imagen Categoría">
+                <a href="#">Hogar</a>
+            </div>
+            <div>
+                <img src="img/categoria3.jpg" alt="Imagen Categoría">
+                <a href="#">Cocina</a>
+            </div>
+            <div>
+                <img src="img/categoria1.jpg" alt="Imagen Categoría">
+                <a href="#">Oficina</a>
+            </div>
+            <div>
+                <img src="img/categoria2.jpg" alt="Imagen Categoría">
+                <a href="#">Hogar</a>
+            </div>
+            <div>
+                <img src="img/categoria3.jpg" alt="Imagen Categoría">
+                <a href="#">Cocina</a>
+            </div>
         </div>
     </section>
-    <section>
+
+    <section class="sobre-nosotros">
         <div>
-            <h2>Sobre Nosotros</h2>
+            <h2>Sobre <span>Nosotros</span></h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora veniam dignissimos ea cumque voluptate assumenda voluptates fugit odit quasi harum minus ullam expedita ducimus autem cupiditate, perspiciatis rerum recusandae quae.</p>
         </div>
     </section>
+
     <main>
         <h2>Nuestros Productos</h2>
         <div>
@@ -101,7 +125,7 @@
     <footer>
         <div>
             <h3>Categorías</h3>
-            <nav>
+            <nav class="navegacion">
                 <a href="#">Oficina</a>
                 <a href="#">Hogar</a>
                 <a href="#">Cocina</a>
