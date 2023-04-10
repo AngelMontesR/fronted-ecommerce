@@ -1,5 +1,6 @@
 html {
    box-sizing: border-box;
+   font-size: 62.5%; /* 1rem = 10px */
 }
 
 *, *:before, *:after {
@@ -17,12 +18,33 @@ img {
     max-width: 100%;
     display: block;
 }
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 5rem 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
  
 /** Header y Navegación **/
 
 .nombre-sitio {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 5rem;
     text-align: center;
 }
 
@@ -31,20 +53,25 @@ img {
 }
 
 .nav-primary {
-    padding: 20px 0px;
+    padding: 2rem 0rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Imagene Portada */
+
 .hero {
     background-image: url(../img/principal.jpg);
     background-size: cover;
-    height: 550px;
+    background-position: center;
+    height: 55rem;
 }
 
+/* Contenido Categorias */
+
 .contenedor {
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0px auto;
 }
 
@@ -57,7 +84,11 @@ img {
 .listado-categorias{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 2rem;
+}
+
+.categorias {
+    margin-top: 5rem;
 }
 
 .categorias h2 {
@@ -67,13 +98,15 @@ img {
 .categoria a{
     display: block;
     text-align: center;
-    padding: 20px;
-    font-size: 20px;
+    padding: 2rem;
+    font-size: 2rem;
 }
 
 .categoria a:hover {
     background-color: #6c579e;
     color: #fff;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
+
+/* Contenido Sobre Nosotros */
