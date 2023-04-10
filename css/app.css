@@ -15,6 +15,7 @@ a {
 
 img {
     max-width: 100%;
+    display: block;
 }
  
 /** Header y Navegación **/
@@ -26,7 +27,7 @@ img {
 }
 
 .nombre-sitio span {
-    color : #5523ca;
+    color : #6c579e;
 }
 
 .nav-primary {
@@ -55,6 +56,24 @@ img {
 
 .listado-categorias{
     display:grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+}
+
+.categorias h2 {
+    text-align: center;
+}
+
+.categoria a{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.categoria a:hover {
+    background-color: #6c579e;
+    color: #fff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
