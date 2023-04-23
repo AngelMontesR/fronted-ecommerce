@@ -40,7 +40,26 @@ h2 {
 h3 {
     font-size: 2rem;
 }
- 
+
+.btn {
+    color: #ffffff;
+    background-color: #242424;
+    display: block;
+    text-transform: uppercase;
+    padding: 1rem;
+    transition: background-color .3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #000000;
+}
+
+
+/* Utilidades */
+
+.text-center {
+    text-align: center;
+}
 /** Header y Navegación **/
 
 .nombre-sitio {
@@ -129,4 +148,84 @@ h3 {
    flex-basis: 50%;
    padding-left: 5rem;
    color: #ffffff;
+}
+
+/* Contenido Principal (Productos) */
+
+.contenido-principal {
+    padding-top: 5rem;
+}
+
+.listado-productos{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+}
+
+.producto:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.producto:nth-child(1) img {
+    height: 43rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.producto:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.producto:nth-child(3) {
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+.producto:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.producto:nth-child(5) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.producto:nth-child(6) {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.producto{
+    background-color: #6c579e;
+    margin-bottom: 2rem;
+}
+
+.producto img{
+    transition: transform .3s ease-in-out;
+}
+
+.producto img:hover{
+    transform: scale(.9);
+}
+
+.texto-producto {
+    color: #ffffff;
+    padding: 3rem;
+}
+
+.texto-producto h3 {
+    margin: 0;
+}
+
+.texto-producto p{
+    margin: 0;
+}
+
+.texto-producto .precio {
+    font-size: 2.8rem;
 }
