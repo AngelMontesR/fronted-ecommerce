@@ -331,3 +331,8 @@ img {
     color: #6c579e;
     font-weight: bold;
 }
+
+.contenido-entrada-blog {
+    width: 60rem;
+    margin: 0 auto;
+}
