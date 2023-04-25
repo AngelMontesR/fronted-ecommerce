@@ -54,10 +54,12 @@ img {
     padding: 1rem;
     transition: background-color .3s ease-in-out;
     text-align: center;
+    border: none;
 }
 
 .btn:hover {
     background-color: #000000;
+    cursor: pointer;
 }
 
 
@@ -352,4 +354,45 @@ img {
     width: 40rem;
     height: 40rem;
     object-fit: cover;
+}
+
+/* Formulario */
+
+.formulario {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.formulario fieldset {
+    border-color: #000;
+    border-width: 1px;
+    margin-bottom: 2rem;
+}
+
+.formulario legend {
+    background-color: #6c579e;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo label {
+    flex-basis: 10rem;
+}
+
+.campo input:not([type="radio"]),
+textarea,
+select {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid #bbbbbb;
 }
