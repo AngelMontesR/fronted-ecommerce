@@ -110,7 +110,16 @@ img {
     padding: 2rem 0rem;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+}
+
+@media (min-width: 768px) 
+{
+    .nav-primary {
+        justify-content: space-between;
+        flex-direction: row;
+    }
 }
 
 /* Imagene Portada */
@@ -119,7 +128,14 @@ img {
     background-image: url(../img/principal.jpg);
     background-size: cover;
     background-position: center;
-    height: 55rem;
+    height: 25rem;
+}
+
+@media (min-width: 768px) 
+{
+    .hero {
+        height: 55rem;
+    }
 }
 
 /* Contenido Categorias */
