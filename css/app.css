@@ -203,9 +203,9 @@ img {
 
 .sobre-nosotros {
     background-image: linear-gradient(to bottom, transparent 50%, #6c579e 50%, #6c579e 100%), url(../img/nosotros.jpg);
-    background-position: left center;
+    background-position: center , top left;
     background-repeat: no-repeat;
-    background-size: 100%, 160rem;   
+    background-size: 100%, 70rem;   
 }
 
 
@@ -216,7 +216,6 @@ img {
         background-position: left center;
         margin-top: 5rem;
         padding: 10rem;
-        background-repeat: no-repeat;
         background-size: 100%, 160rem;   
     }
 }
