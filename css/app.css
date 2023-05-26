@@ -151,18 +151,37 @@ img {
     border-color: #e1e1e1;
 }
 
-.listado-categorias{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+
+@media (min-width: 768px) 
+{
+    .listado-categorias{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+    }
 }
 
 .categorias {
-    margin-top: 5rem;
+    padding: 5rem 0;
 }
 
 .categorias h2 {
     text-align: center;
+}
+
+.categoria {
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) 
+{
+    .categoria {
+        margin-bottom: 0;
+    }
+}
+
+.categoria img {
+    width: 100%;
 }
 
 .categoria a{
